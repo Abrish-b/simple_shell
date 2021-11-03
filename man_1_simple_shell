@@ -37,7 +37,7 @@ If there exists a shell builtin by that name, the builtin is invoked.
 .RE
 
 .RS
-2. If the first character of the command is none of a slash (\fI\\\fR), dot (\fI.\fR), nor builtin, \fBshellby\fR searches each element of the
+2. If the first character of the command is none of a slash (\fI\\\fR), dot (\fI.\fR), nor builtin, \fBethio\fR searches each element of the
 \fBPATH\fR environmental variable for a directory containing an executable file by that name.
 .RE
 
@@ -66,15 +66,15 @@ Alternatively, an input of end-of-file (\fBCtrl+d\fR) will exit the program.
 .B Ethio\fR inerprets the \fI$\fR character for variable replacement:
 
 .RS
-.B $ENV_VARIABLE\fR	\fIENV_VARIABLE\fR is subsituted with its value.
+.B $ENV_VARIABLE\fR\fIENV_VARIABLE\fR is subsituted with its value.
 .RE
 
 .RS
-.B $?\fR			\fI?\fR is substituted with the return value of the last program executed.
+.B $?\fR\fI?\fR is substituted with the return value of the last program executed.
 .RE
 
 .RS
-.B $$\FR			The second \fI$\fR is substituted with the current process ID.
+.B $$\FRThe second \fI$\fR is substituted with the current process ID.
 .RE
 
 .B Comments
